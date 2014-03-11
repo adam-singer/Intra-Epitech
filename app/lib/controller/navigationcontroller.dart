@@ -41,10 +41,6 @@ class NavigationController {
       go(data);
     });
     
-    chrome.sockets.tcp.create().then((data) {
-      print(data);
-    });
-    
     if (chrome.storage.available) {
       CacheManager.get().then((Map map) {
         if (map.containsKey("user")) {

@@ -10,13 +10,7 @@
           "128": "icon128.png" },
 	"permissions" : [ 
     "storage",
-    "https://intra.epitech.eu/",
-    { "socket" : ["tcp-connect"] },
-    "sockets": {
-      "tcp": {
-        "connect": "*"
-      }
-    }
+    "https://intra.epitech.eu/"
 	],
 	"app": {
     "background": {
