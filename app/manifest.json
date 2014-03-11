@@ -1,0 +1,26 @@
+{
+	"name": "Kleak",
+	"version": "0.0.0.1",
+	"manifest_version" : 2,
+	"default_locale": "en",
+	"description": "Test",
+	"author": "Kevin Segaud",
+	"icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+	"permissions" : [ 
+    "storage",
+    "https://intra.epitech.eu/",
+    { "socket" : ["tcp-connect"] },
+    "sockets": {
+      "tcp": {
+        "connect": "*"
+      }
+    }
+	],
+	"app": {
+    "background": {
+      "scripts": [ "background.js" ]
+    }
+  }
+}

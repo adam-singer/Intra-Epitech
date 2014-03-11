@@ -1,0 +1,51 @@
+.titlebar {
+  display: block;
+  font-size: 1.5em;
+  font-style: bold;
+  width: 100%;
+  background: #fff;
+  -webkit-app-region: drag;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.right {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  -webkit-app-region: no-drag;
+}
+
+.left {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  -webkit-app-region: no-drag;
+}
+
+.close {
+  background: url(/lib/images/close.svg);
+  background-size: 400px 400px;
+  background-position: -6px -6px;
+}
+
+.read {
+  background: url(/lib/images/read.svg);
+  background-size: 20px 20px;
+  background-position: 4px 4px;
+  background-repeat: no-repeat;
+}

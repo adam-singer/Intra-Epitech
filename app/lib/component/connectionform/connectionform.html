@@ -1,0 +1,18 @@
+<div class="connection" connection-controller>
+  <div ng-if="cntctrl.iserror" class="center error" ng-class="cntctrl.errorclass">{{cntctrl.error}}</div>
+  <div ng-if="cntctrl.loading" class="center loading">Loading, please wait...</div>
+  <div class="center">
+    <progress ng-if="cntctrl.loading && cntctrl.cancalculate"  value="{{cntctrl.percentComplete}}" max="100"></progress>
+  </div>
+  <form>
+    <div class="center flex">
+      <div class="label login">Login</div><input class="input" type="text" ng-model="cntctrl.login" placeholder="Login" autofocus/>
+    </div>
+    <div class="center flex">
+      <div class="label password">Password</div><input class="input" type="password" ng-model="cntctrl.password" placeholder="Password"/>
+    </div>
+    <div class="center">
+      <div class="btsubmit" ng-submit="cntctrl.connect()">Connexion</div>
+    </div>
+  </form>
+</div>

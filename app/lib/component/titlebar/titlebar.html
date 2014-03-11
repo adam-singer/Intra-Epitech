@@ -1,0 +1,9 @@
+<div class="titlebar">
+  <span ng-if="titlebar.delegate.leftisset" ng-click="titlebar.delegate.clickleft()" 
+      class="left" ng-class="titlebar.delegate.styleleft">
+    </span>
+  <span class="title">{{titlebar.title}}</span>
+  <span ng-if="titlebar.delegate.rightisset" ng-click="titlebar.delegate.clickright()" 
+    class="right" ng-class="titlebar.delegate.styleright">
+  </span>
+</div>
